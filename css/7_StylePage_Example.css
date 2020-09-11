@@ -1,0 +1,29 @@
+/* Example design file */
+
+h1 {
+    background: #B3B3B3;
+    font-size: 300%;
+    color: aliceblue;
+}
+
+header {
+    background: #D4AC0D;
+    text-align: center;
+}
+
+/*
+h1 {
+    color: cadetblue;   
+}
+*/
+
+nav {
+    /*font-variant: small-caps;*/
+    font-size: 150%;
+    font-family: "Times New Roman";
+}
+
+h2 {
+    color: #B00719;
+    background: #45B39D;
+}
