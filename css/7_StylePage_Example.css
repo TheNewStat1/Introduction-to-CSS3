@@ -11,19 +11,29 @@ header {
     text-align: center;
 }
 
-/*
-h1 {
-    color: cadetblue;   
-}
-*/
+
 
 nav {
-    /*font-variant: small-caps;*/
+    font-variant: small-caps;
     font-size: 150%;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", Ariel;
 }
 
 h2 {
     color: #B00719;
     background: #45B39D;
 }
+
+details {
+    font-style: italic;
+}
+
+summary {
+    font-style: normal;
+}
+
+footer {
+    background: #B3B3B3;
+}
+
+
