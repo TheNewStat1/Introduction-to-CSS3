@@ -1,0 +1,108 @@
+
+/* Sibling Selectors */
+
+/* Three types of selectors */
+/** Title selector **/
+h1 {
+	
+}
+
+/** class selector **/
+.class {
+	
+}
+
+/** id selector **/
+#id {
+	
+}
+
+<section id="id">
+  <h1>...</h1>
+  <h2 class="class">...</h2>
+</section>
+
+
+
+
+/** descendent selectors **/
+/** Selects all h2 tags branched within all article tags **/
+/** can also impact h2 tags further nested within an article tag by a div or a span **/
+article h2 {
+	
+}
+
+<h2>...</h2>
+<article>
+  <h2>**This heading will be selected**</h2>
+  <div>
+    <h2>**This heading will be selected**</h2>
+  </div>
+</article>
+
+
+
+
+/** direct child selectors **/
+/** used when you want to select the children directly under a parent selector **/
+/** selects only p tags directly under an article tag does NOT effect nested p tags **/
+article > p {
+	
+}
+
+
+<p>...</p>
+<article>
+  <p>**This paragraph will be selected**</p>
+  <div>
+    <p>This text is not selected</p>
+  </div>
+</article>
+
+
+
+/** general sibling selector **/
+/** allows selection based on their sibling elements in top down order **/
+/* selects all siblings where p tags comes after an h2 tag **/
+
+h2 ~ p {
+	
+}
+
+<p>...</p>
+<section>
+  <p>...</p>
+  <h2>...</h2>
+  <p>**This paragraph will be selected**</p>
+  <div>
+    <p>...</p>
+  </div>
+  <p>**This paragraph will be selected**</p>
+</section>
+
+
+/** Adjacent Sibling Selector **/
+/** selects only the tag right after the other **/
+/** selects a paragraph that directly follows h2 tag - must be siblings **/
+h2 + p {...
+} 
+
+<p>...</p>
+<section>
+  <p>...</p>
+  <h2>...</h2>
+  <p>*This paragraph will be selected*</p>
+  <div>
+    <p>This tag is not selected</p>
+  </div>
+  <p>This tag is not selected</p>
+</section>
+
+
+
+
+
+
+
+
+

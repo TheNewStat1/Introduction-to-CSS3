@@ -1,0 +1,62 @@
+
+
+/** Attribute Present Selector **/
+/** Selects all tags with said attribute **/
+a[target] {...
+	
+}
+
+<a href="#" target="_blank">...</a>
+
+
+/** Attribute Equals Selector **/
+/** Selects the tags with the attribute and its value **/
+/** This selector gets all a tags that are linked to google **/
+a[href="http://google.com/"] {
+	
+}
+
+<a href="http://google.com/">...</a>
+
+
+/** Attribute Contains Selector **/
+/** Selects tags that contain parts of an attributes value **/
+a[href*="login"] {...}
+
+<a href="/login.php">...</a>
+
+
+/** Attribute Begins With Selector **/
+/** you guessed it selects tags with attribute values that start with something **/
+a[href^="https://"] {...}
+
+<a href="https://chase.com/">...</a>
+
+
+/** Attribute Ends With Selector **/
+/** Selects the last phrase at the end of a tags attribute value **/
+/** Selects all a tags with an href that end with .pdf **/
+a[href$=".pdf"] {...}
+
+
+<a href="/docs/menu.pdf">...</a>
+
+
+/** Attribute Spaced Selector **/
+/** just see example **/
+/** selects a tags with rel attribute that have tag seperated by a space **/
+a[rel~="tag"] {...}
+
+<a href="#" rel="tag nofollow">...</a>
+
+
+/** Attribute Hyphenated Selector **/
+/** helps select tags with attribute values that have hyphens **/
+a[lang|="en"] {...}
+
+<a href="#" lang="en-US">...</a>
+
+
+
+
+

@@ -1,0 +1,113 @@
+/* A Look at Pseudo-Classes */
+
+/** Link Pseudo-classes **/
+/** Used to style whether a link before it has been visited **/
+a:link {...}
+/** The :visited pseudo-class is used to modify the links that have been visited **/
+a:visited {...}
+
+
+/** User Action Pseudo-classes **/
+/** User action based **/
+/** pseudo-class is applied to an element when a user moves their cursor over the element **/
+a:hover {...}
+/** applied to an element when a user engages an element, such as clicking on an element **/
+a:active {...}
+/** is applied to an element when a user has made an element the focus point of the page, often by using the keyboard to tab **/
+a:focus {...}
+
+
+/** User Interface State Pseudo-classes **/
+/** classess generated around the user interface state of elements **/
+/** These pseudo-classess work with the input tag **/
+
+/** :enabled selects an input that is in the default state of enabled and available for us **/
+input:enabled {...}
+/** disabled pseudo-class selects an input that has the disabled attribute tied to it. **/
+input:disabled {...}
+
+/** These next two are used with the checkbox and radio button **/
+/** :checked pseudo-class selects checkboxes or radio buttons that are, checked. **/
+input:checked {...}
+
+/** When a checkbox or radio button has neither been selected nor unselected it lives in an indeterminate state **/
+input:indeterminate {...}
+
+
+
+/** :first-child, :last-child, & :only-child **/
+/** These pseudo-classes select tag based on first, last and only child **/
+li:first-child {...}
+li:last-child {...}
+div:only-child {...}
+
+<ul>
+  <li>**This list item will be selected**</li>
+  <li>
+    <div>**This div will be selected**</div>
+  </li>
+  <li>
+    <div>his div will NOT be selected</div>
+    <div>his div will NOT be selected</div>
+  </li>
+  <li>**This list item will be selected**</li>
+</ul>
+
+
+/** Target Pseudo-class **/
+/** :target pseudo-class is used to style elements when an element’s ID attribute value matches that of the URI fragment identifier. **/
+/** the section with that same ID attribute value would be stylized accordingly using the :target pseudo-class. **/
+section:target {...}
+
+<section id="hello">...</section>
+
+
+/** Empty Pseudo-class **/
+div:empty {...}
+
+<div>Hello</div>
+<div><!-- Coming soon --></div><!-- This div will be selected -->
+<div></div><!-- This div will be selected -->
+<div> </div>
+<div><strong></strong></div>
+
+
+/** Negation Pseudo-class **/
+div:not(.awesome) {...}
+:not(div) {...}
+
+<div>This div will be selected</div>
+<div class="awesome">...</div>
+<section>This section will be selected</section>
+<section class="awesome">This section will be selected</section>
+
+
+
+/** Textual Pseudo-elements **/
+.alpha:first-letter,
+.bravo:first-line {
+  color: #ff7b29;
+  font-size: 18px;
+}
+
+<p class="alpha">Lorem ipsum dolor...</p>
+<p class="bravo">Integer eget enim...</p>
+
+
+
+/** Generated Content Pseudo-elements **/
+/** Shows the links after the text **/
+a:after {
+  color: #9799a7;
+  content: " (" attr(href) ")";
+  font-size: 11px;
+}
+
+<a href="http://google.com/">Search the Web</a>
+<a href="http://learn.shayhowe.com/">Learn How to Build Websites</a>
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+/* hw1 css */
+
+header {
+	background: #5DADE2;
+	text-align: center;
+	color: #F8F9F9;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+a {
+	background: #D4EFDF;
+}
+
+nav {
+	background: #5DADE2;
+	text-align: left;
+}
+
+section {
+	background: #EDBB99;
+}
+
+h2 {
+	color:#2471A3;
+	text-transform: uppercase;
+}
+
+aside {
+	display:table;
+	visibility: collapse;
+	
+	
+}
+
