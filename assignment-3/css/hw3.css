@@ -12,7 +12,7 @@ header {
 	background-size: cover;
 	text-align: center;
 	padding: 2.5%;
-	float:both;
+	float: both;
 }
 
 h1 {
@@ -45,14 +45,16 @@ nav a {
 	color: black;
 }
 
-nav a.active, nav a:hover, nav a:focus {
+nav a.active,
+nav a:hover,
+nav a:focus {
 	background: white;
 	opacity: 95%;
 }
 
 
 main {
-	clear:both;
+	clear: both;
 	display: block;
 	float: left;
 }
@@ -86,4 +88,64 @@ aside {
 
 section {
 	display: flex 1;
+}
+
+
+table {
+	/* Center table */
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	/* edit table */
+	border-radius: 5px;
+}
+
+
+th {
+	/* Design */
+	color: white;
+	background: green;
+	opacity: 65%;
+
+	border-bottom: solid 3px #145A32 ;
+	/* Format */
+	height: 40px;
+	width: 100px;
+	border-radius: 2px;
+	font-family: "Lucida Console";
+}
+
+td {
+	/* Design */
+	font-family: "Lucida Console";
+	opacity: 65%;
+	
+	/* Format */
+	font-size: 5;
+
+}
+
+tr th:first-child {
+	text-align: left;
+}
+
+tr td:not(first-child) {
+	text-align: center;
+	width: 100px;
+	height: 20px;
+	background: #73C6B6;
+	font-family: "Lucida Console";
+}
+
+tr td:first-child {
+	text-align: left;
+	background: #73C6B6;
+	padding-right: 5%;
+	width: inherit;
+	width: 65%;
+	font-family: "Lucida Console";
+}
+
+th:hover, td:hover {
+	opacity: 80%;
 }
