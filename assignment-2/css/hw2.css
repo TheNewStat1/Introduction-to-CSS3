@@ -1,0 +1,88 @@
+/* hw2 (Called hw1 as per assignment) css */
+
+body {
+	margin: 10px 10px 10px 10px;
+	padding: 10px;
+}
+
+
+header {
+	margin: 0px;
+	background-image: url(../images/flywheel.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 2.5%;
+	float:both;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 30px;
+	padding: 15px 20px 1px 20px;
+	color: antiquewhite;
+}
+
+
+nav {
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
+
+
+nav a {
+	/* Display */
+	margin: 1px 25px 55px 25px;
+	display: inline-block;
+	height: 17px;
+	width: 170px;
+	padding: 25px;
+
+	/* Visibility */
+	font-size: 20px;
+	border-radius: 5px;
+	background: rgba(248, 249, 249, 50%);
+	text-decoration-line: none;
+	color: black;
+}
+
+nav a.active, nav a:hover, nav a:focus {
+	background: white;
+	opacity: 95%;
+}
+
+main {
+	clear:both;
+	display: block;
+	float: left;
+}
+
+h2 {
+	color: black;
+}
+
+aside {
+	margin-right: 10px;
+	float: left;
+	background: green;
+}
+
+aside a {
+	display: block;
+	margin-right: 1px;
+}
+
+aside {
+	clear: both;
+}
+
+.left a img {
+	height: 125px;
+	width: 200px;
+	margin: 20px;
+	display: block;
+}
+
+
+section {
+	display: flex 1;
+}
