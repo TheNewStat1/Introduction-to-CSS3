@@ -1,8 +1,11 @@
 /* Using an External Style sheet */
+
+/* This line styles all h1 tags*/
 h1 {
     color: blue
 }
 
+/* This line styles all p tags */
 p {
     color : red
 }

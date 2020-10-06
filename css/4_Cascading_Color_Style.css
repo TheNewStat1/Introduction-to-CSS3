@@ -1,15 +1,15 @@
 /* Using an External Style sheet */
-
 h1 {
     color: black;
 }
+
 
 p {
     color: green;
     font-size: 30px;
 }
 
-
+/* The second paragraph overides the first paragraph tag*/
 p {
     color: red;
 }
